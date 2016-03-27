@@ -317,14 +317,14 @@ NEWHTML;
 </form>
 </section>
 
--->
+
 <section class="spacer" id="spacer">
 
 
 </section>
 
 
-
+-->
 
 
 
@@ -345,13 +345,13 @@ NEWHTML;
 
 
             <tr><td class="small"><p>* Required Fields</p></td></tr>
-            <!--
+
 
             <tr><td><label for ="room">Room *</label></td>
                 <td><select class="inputform" name="room" id="room">
                         <option value ="">Select Room</option>
 
-                        -->
+
 
 <?php
 
