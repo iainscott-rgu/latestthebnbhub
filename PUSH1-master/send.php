@@ -48,6 +48,25 @@ $mail->Body = 'Booking Reference: '.$bookingid."\n"
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
+
+    $newhtml =
+        <<<NEWHTML
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon"
+          type="image/png"
+          href="assets/b&bicon.png">
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Confirmation Page: theB&Bhub</title>
+
+
     echo "Welcome to the Booking Confirmation Page!!!<p>";
     echo "A confirmation email has been sent!<p>";
     echo "Here are your Booking details...<p>";
@@ -70,8 +89,7 @@ if (!$mail->send()) {
     echo "&nbsp;<p>";
     echo "<a href='SearchBB.php'>Return to the Search Page</a>";
 
-    $newhtml =
-        <<<NEWHTML
+
                         <div class="table5">
 <a href="Customerinfo.php" id="nodec"><table border="0" cellpadding="5">
 <tr>
