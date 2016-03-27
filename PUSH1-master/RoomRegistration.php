@@ -220,64 +220,85 @@ session_start();
 </section>
 
 
+
 <section id="mycontainer">
 
-    <button class="accordion">Adding you bed and breakfast name</button>
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Adding your Bed and Breakfast Name</button>
     <div class="panel">
-        <p>Enter the name of your bed and breakfast as you want it displayed on the site. This will be the name returned in the search results. Maximum number of characters is 50.</p>
+        <p>Enter the name of your Bed and Breakfast as you want it displayed on the website.</p>
+        <p>This will be the name that is returned within the search results.</p>
+        <p> You can use letters, numbers and special characters up to a maximum of 50 characters.</p>
     </div>
 
-    <button class="accordion">Address?</button>
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Adding the Address of your Bed and Breakfast</button>
     <div class="panel">
-        <p>Enter the address of your bed and breakfast including the city and postcode.  </div>
+        <p>Enter the address of your Bed and Breakfast.</p>
+        <p> Do NOT include the City and Postcode in the address field as these are seperate fields in the form.</p>
+        <p>There are two address line fields allowing up to 50 characters in each address field.</p>
+    </div>
 
-    <button class="accordion">City?</button>
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Adding the City of your Bed and Breakfast</button>
     <div class="panel">
-        <p>Blah... Blah... Blah...</p>
+        <p>Enter the City your Bed and Breakfast is located.</p>
+        <p>This will be the field the website will search on when searching by City so please enter the information correctly.</p>
+        <p>The field allows up to a maximum of 20 characters. </p>
     </div>
 
 
-    <button class="accordion">Telephone?</button>
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Adding the Telephone Numbers of your Bed and Breakfast</button>
     <div class="panel">
-        <p>Blah... Blah... Blah...</p>
+        <p>You can have up to a maximum of 20 characters in the Telephone and Mobile fields of the form.</p>
+        <p>You can include National and International dialling codes.</p>
+        <p>Only landlines will be displayed on the website.</p>
     </div>
 
 
-    <button class="accordion">Email?</button>
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Adding the Email Address of the Bed and Breakast</button>
     <div class="panel">
-        <p>Blah... Blah... Blah...</p>
+        <p>Add the email address of the Bed and Breakfast.</p>
+        <p>The email address will be posted within your listing and will be the address guests will use to contact you.</p>
+        <p>You can have up to a maximum of 50 characters.</p>
     </div>
 
-    <button class="accordion">B&B Description?</button>
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Adding a Description of the Bed and Breakfast</button>
     <div class="panel">
-        <p>Blah... Blah... Blah... </div>
-
-
-    <button class="accordion">Room Description?</button>
-    <div class="panel">
-        <p>Blah... Blah... Blah...</p>
+        <p>Enter a description of your Bed and Breadfast up to a maximum of 250 characters.</p>
+        <p>The description will be posted in both the search results and the booking page of the website.</p>
+        <p>You should provide a general description of the Bed and Breakfast and the services provided.</p>
     </div>
 
-    <button class="accordion">Check In Time</button>
-    <div class="panel">
-        <p>Blah... Blah... Blah... </p></div>
 
-
-    <button class="accordion">Check Out Time?</button>
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Adding a Room Description for your Bed and Breakfast</button>
     <div class="panel">
-        <p>Blah... Blah... Blah...</p>
+        <p>Enter a description of the Room in your Bed and Breadfast up to a maximum of 250 characters</p>
+        <p>The description will be posted only in the booking page of the website.</p>
+        <p>You should provide a general description of the Room and services.</p>
     </div>
 
-    <button class="accordion">Upload Picture?</button>
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Select a Check In Time</button>
     <div class="panel">
-        <p>Blah... Blah... Blah...</p> </div>
+        <p>Select the time guests are allowed to check-in from the dropdown menu provided.</p>
+    </div>
 
 
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Select a Check Out Time</button>
+    <div class="panel">
+        <p>Select the time guests have to check-out by from the dropdown menu provided.</p>
+    </div>
 
+    <button class="accordion">&nbsp;&nbsp;&nbsp;Upload Images of your Bed and Breakfast</button>
+    <div class="panel">
+        <p>Use the fields provided to upload images of your Bed and Breakfast to the website.</p>
+        <p>theB&Bhub do not currently host images. Therefore you are required to provide the url's of the
+            images that are hosted by yourself or a third party in order to display them on the website.</p>
+        <p>The fields will accept url's of up to a maximum of 250 characters.</p>
 
-    <button class="accordion lastaccordion">Pets Allowed?</button>
+    </div>
+
+    <button class="accordion lastaccordion">&nbsp;&nbsp;&nbsp;Stipulating your Bed and Breakfasts policy on Pets</button>
     <div id="foo" class="panel lastpanel">
-        <p>Blah... Blah... Blah...</p>
+        <p>Select whether or not your Bed and Breakfast allows guests to bring pets.</p>
+        <p>Simply select yes or no from the dropdown menu provided.</p>
     </div>
 
     <script>
@@ -294,8 +315,6 @@ session_start();
 
 
 </section>
-
-
 
 
 <section class="spacer" id="spacer">
