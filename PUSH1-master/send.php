@@ -69,6 +69,44 @@ if (!$mail->send()) {
     echo "&nbsp;<p>";
     echo "&nbsp;<p>";
     echo "<a href='SearchBB.php'>Return to the Search Page</a>";
+
+    $newhtml =
+        <<<NEWHTML
+                        <div class="table5">
+<a href="Customerinfo.php" id="nodec"><table border="0" cellpadding="5">
+<tr>
+<td><strong><img src="{$row[imageurl]}" id="img3"></strong></td>
+<td>
+<table border="0" cellpadding="5">
+<tr>
+<td colspan="2">B&B Name: <strong>{$row[bbname]}</strong></td>
+</tr>
+<tr>
+<td colspan="2">Address: <strong>{$row[address]}</strong></td>
+</tr>
+<tr>
+<td>Location: <strong>{$row[city]}</strong></td>
+<td>Postcode: <strong>{$row[postcode]}</strong></td>
+</tr>
+<tr>
+<td>Check-in: <strong>{$row[checkin]}</strong></td>
+<td>Check-out: <strong>{$row[checkout]}</strong></td>
+</tr>
+<tr>
+<td>Pets allowed: <strong>{$row[pets]}</strong></td>
+</tr>
+</h6>
+</table>
+</td>
+</tr>
+</table></a>
+
+<button style="float:right;" class="btn" onclick="panToBB($count)">ViewMap</button>
+
+</div>
+
+NEWHTML;
+    print($newhtml);
 }
 
 ?>
