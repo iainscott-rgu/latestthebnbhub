@@ -428,11 +428,7 @@ catch(PDOException $e)
             </tr>
 
 
-            <tr>
-                <td>
-                    <label for="checkin">checkin test:</label></td>
-                <td><input type="text" id="checkin" class="inputform" name="checkin" value={$row['checkin']} size="20" maxlength="20"></td>
-            </tr>
+
 
 
 
@@ -450,6 +446,13 @@ catch(PDOException $e)
                                     <<<NEWHTML
 
                              <input type="text" name="bb_email" value="{$row[bb_email]}" readonly>{$row[bb_email]}</option>
+
+                               <tr>
+                <td>
+                    <label for="checkin">checkin test:</label></td>
+                <td><input type="text" id="checkin" class="inputform" name="checkin" value={$row['checkin']} size="20" maxlength="20"></td>
+            </tr>
+
 NEWHTML;
                                 print($newhtml);
                             }
