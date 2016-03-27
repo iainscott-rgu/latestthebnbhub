@@ -331,7 +331,7 @@ NEWHTML;
 <section class="container" id="featured">
     <div class="centre">
 
-        <p>You're almost there... please select a room and enter your details to complete your booking</p>
+        <p>Please select a room and enter your details to complete your booking</p>
     </div>
 </section>
 
