@@ -106,12 +106,13 @@ if (!$mail->send()) {
 <tr>
 <td colspan="2"><p>Here are your Booking details...</p></td>
 </tr>
-
 <tr>
 <td>Booking Reference: $bookingid</td>
 </tr>
 <tr>
 <td>B&B Name: $bbname</td>
+</tr>
+<tr>
 <td>Room Name: $roomname</td>
 </tr>
 <tr>
@@ -119,22 +120,26 @@ if (!$mail->send()) {
 </tr>
 <tr>
 <td>Check-in: $checkin</td>
+</tr>
+<tr>
 <td>Check-out: $checkout</td>
+</tr>
 <tr>
 <td>Cost (incl. VAT): $cost</td>
+</tr>
 <tr>
 <td>Customer Name: $title $firstname $surname</td>
 </tr>
 <tr>
 <td>Customer Email: $email</td>
-<td>Customer Telephone: $telephone</td>
-</tr>
-<td>Customer Address: $address, $address2</td>
 </tr>
 <tr>
-<td>City: $city</td>
-<td>Postcode: $postcode</td>
+<td>Customer Telephone: $telephone</td>
 </tr>
+<tr>
+<td>Customer Address: $address, $address2, $city, $postcode</p>
+</tr>
+
 </table>
 
 </div>
