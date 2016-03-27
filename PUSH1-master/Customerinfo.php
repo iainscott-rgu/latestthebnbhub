@@ -430,7 +430,7 @@ catch(PDOException $e)
 
             <tr>
                 <td>
-                    <label for="telephone">checkin test:</label></td>
+                    <label for="checkin">checkin test:</label></td>
                 <td><input type="text" id="checkin" class="inputform" name="checkin" value=$checkin size="20" maxlength="20"></td>
             </tr>
 
