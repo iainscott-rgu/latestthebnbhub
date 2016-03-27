@@ -98,7 +98,7 @@ if (!$mail->send()) {
     </div>
 </section>
 
-<div class="table5">
+<div class="table7">
 <table border="1" cellpadding="5">
 <tr>
 <td colspan="2"><p>A confirmation email has been sent!</p></td>
@@ -143,27 +143,6 @@ if (!$mail->send()) {
 </table>
 
 </div>
-
-    echo "Welcome to the Booking Confirmation Page!!!<p>";
-    echo "Here are your Booking details...<p>";
-    echo "&nbsp;<p>";
-    echo "&nbsp;<p>";
-    echo "Booking Reference: ".$bookingid."<p>";
-    echo "B&B Name: ".$bbname."<p>";
-    echo "Room Name :".$roomname."<p>";
-    echo "Booking Dates: ".$bookingstartdate." - ".$bookingenddate."<p>";
-    echo "Check-in: ".$checkin."<p>";
-    echo "Check-out: ".$checkout."<p>";
-    echo "Cost (excl VAT): ".$cost."<p>";
-    echo "Customer Name: ".$title." ".$firstname." ".$surname."<p>";
-    echo "Customer Email: ".$email."<p>";
-    echo "Customer Telephone: ".$telephone."<p>";
-    echo "Customer Address: ".$address.", ".$address2."<p>";
-    echo "City: ".$city."<p>";
-    echo "Postcode: ".$postcode."<p>";
-    echo "&nbsp;<p>";
-    echo "&nbsp;<p>";
-    echo "<a href='SearchBB.php'>Return to the Search Page</a>";
 
 
 
