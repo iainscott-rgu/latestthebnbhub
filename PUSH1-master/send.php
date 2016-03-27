@@ -66,6 +66,20 @@ if (!$mail->send()) {
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <title>Confirmation Page: theB&Bhub</title>
 
+    <section class="container" id="navigation2">
+    <div>
+        <nav role="main">
+            <ul>
+                <li><a href="help.php#helpsection">Help</a></li>
+                <li><a href="help.php#contactsection">Contact</a></li>
+                <li><a href="B&Bregistration.php">Register</a></li>
+                <li><a href="OwnerSignIn.php">Member Area</a></li>
+                <li><a href="SearchBB.php">Search</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
 
     echo "Welcome to the Booking Confirmation Page!!!<p>";
     echo "A confirmation email has been sent!<p>";
