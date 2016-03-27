@@ -264,7 +264,7 @@ catch(PDOException $e)
 
 </section>
 
-
+<!--
 <section class="container" id="featured">
     <div class="centre">
 
@@ -281,14 +281,15 @@ catch(PDOException $e)
 <form action="send.php" method="post">
 
     <table class="table6">
-<!--
+
         <tr><td class="small"><p>* Required Fields</p></td></tr>
 
-        -->
+
         <tr><td><label for ="room">Select a Room *</label></td>
             <td><select class="inputform" name="room" id="room">
                     <option value ="">Select Room</option>
-                    <?php
+                    -->
+                    <?php /*
                     $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
                     $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
                     try{
@@ -305,20 +306,18 @@ NEWHTML;
                     }
                     catch(PDOException $e)
                     {print"$e";}
-                    ?>
-                </select>
-            </td></tr>
-        <tr>
-            <td colspan="4"><p align="right" ><input class="btn2" type="submit" value="Submit" class="submit" /></p></td>
-        </tr>
+                   */ ?>
+<!--
 
+</select>
+            </td></tr>
 
 </table>
 
 </form>
 </section>
 
-
+-->
 <section class="spacer" id="spacer">
 
 
@@ -355,7 +354,7 @@ NEWHTML;
                         -->
 
 <?php
-/*
+
 
 $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
 $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
@@ -374,14 +373,14 @@ NEWHTML;
 catch(PDOException $e)
 {print"$e";}
 
-*/
+
 
 ?>
 
-  <!--
+
         </select>
             </td></tr>
--->
+
 
             <tr><td>
                     <label for="title">Title: *</label></td>
