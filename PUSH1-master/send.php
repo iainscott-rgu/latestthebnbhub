@@ -101,10 +101,10 @@ if (!$mail->send()) {
 <div class="table5">
 <table border="1" cellpadding="5">
 <tr>
-<td colspan="3"><p>A confirmation email has been sent!</p></td>
+<td colspan="2"><p>A confirmation email has been sent!</p></td>
 </tr>
 <tr>
-<td colspan="3"><p>Here are your Booking details...</p></td>
+<td colspan="2"><p>Here are your Booking details...</p></td>
 </tr>
 
 <tr>
@@ -130,11 +130,13 @@ if (!$mail->send()) {
 <td>Customer Telephone: $telephone</td>
 </tr>
 <td>Customer Address: $address, $address2</td>
+</tr>
+<tr>
 <td>City: $city</td>
 <td>Postcode: $postcode</td>
 </tr>
 <tr>
-<td colspan="3">
+<td colspan="2">
 <a href='SearchBB.php'>Return to the Search Page</a>
 </td>
 </tr>
