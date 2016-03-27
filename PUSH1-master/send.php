@@ -98,7 +98,7 @@ if (!$mail->send()) {
     </div>
 </section>
 
-<div class="table7">
+<div class="table6">
 <table border="1" cellpadding="5">
 <tr>
 <td colspan="2"><p>A confirmation email has been sent!</p></td>
