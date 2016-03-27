@@ -66,6 +66,15 @@ if (!$mail->send()) {
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <title>Confirmation Page: theB&Bhub</title>
 
+    <section class="container" id="banner">
+    <div class="floatleft">
+        <img src = "assets/bnblogocroporange.png" id="img">
+    </div>
+    <div class="floatright">
+
+    </div>
+    </section>
+
     <section class="container" id="navigation2">
     <div>
         <nav role="main">
