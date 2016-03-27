@@ -104,21 +104,43 @@ if (!$mail->send()) {
 <td colspan="2">A confirmation email has been sent!</td>
 </tr>
 <tr>
-<td colspan="2">Here are your Booking details...</td>
+<td>
+$nbsp;
+</td>
 </tr>
+<tr>
+<td colspan="2"><p>Here are your Booking details...</p></td>
+</tr>
+
 <tr>
 <td>Booking Reference: $bookingid</td>
-<td>Postcode: <strong>{$row[postcode]}</strong></td>
 </tr>
 <tr>
-<td>Check-in: <strong>{$row[checkin]}</strong></td>
-<td>Check-out: <strong>{$row[checkout]}</strong></td>
+<td>B&B Name: $bbname</td>
+<td>Room Name: $roomname</td>
 </tr>
 <tr>
+<td>Booking Dates: $bookingstartdate - $bookingenddate</td>
+</tr>
+<tr>
+<td>Check-in: $checkin</td>
+<td>Check-out: $checkout</td>
+<tr>
+<td>Cost (incl. VAT): $cost</td>
+<tr>
+<td>Customer Name: $title $firstname $surname</td>
+</tr>
+<tr>
+<td>Customer Email: $email</td>
+<td>Customer Telephone: $telephone</td>
+</tr>
+<td>Customer Address: $address, $address2</td>
+<td>City: $city</td>
 <td>Postcode: $postcode</td>
 </tr>
-</h6>
-</table>
+<tr>
+<td>
+<a href='SearchBB.php'>Return to the Search Page</a>
 </td>
 </tr>
 </table>
