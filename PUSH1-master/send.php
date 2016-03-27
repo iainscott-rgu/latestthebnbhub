@@ -101,10 +101,10 @@ if (!$mail->send()) {
 <div class="table6">
 <table border="0" cellpadding="5">
 <tr>
-<td colspan="2"><h5><p>A confirmation email has been sent!</p></h5></td>
+<td colspan="2"><p>A confirmation email has been sent!</p></td>
 </tr>
 <tr>
-<td colspan="2"><h5><p>Here are your Booking details...</p></h5></td>
+<td colspan="2"><p>Here are your Booking details...</p></td>
 </tr>
 <tr>
 <td>Booking Reference: $bookingid</td>
