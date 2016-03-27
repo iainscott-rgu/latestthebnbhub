@@ -127,7 +127,7 @@ try{
 </tr>
 <tr>
 <td width="25%"><strong>Telephone: </strong></td><td>{$row[telephone]}</td>
-<td width="20%"><strong>Email Address: </strong></td><td>{$row[email]}</td>
+<td width="20%"><strong>Email Address: </strong></td><td>{$row[bb_email]}</td>
 
 </tr>
 
@@ -428,7 +428,11 @@ catch(PDOException $e)
             </tr>
 
 
-
+            <tr>
+                <td>
+                    <label for="telephone">checkin test:</label></td>
+                <td><input type="text" id="checkin" class="inputform" name="checkin" value="{$row[checkin]}" size="20" maxlength="20"></td>
+            </tr>
 
 
 
