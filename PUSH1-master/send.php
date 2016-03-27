@@ -88,10 +88,41 @@ if (!$mail->send()) {
         </nav>
     </div>
 </section>
+<section class="container" id="featured">
+    <div class="centre">
 
+        <p>Welcome to the Booking Confirmation Page!!!</p>
+    </div>
+</section>
+
+<div class="table5">
+<table border="0" cellpadding="5">
+<tr>
+<td colspan="2">A confirmation email has been sent!</td>
+</tr>
+<tr>
+<td colspan="2">Here are your Booking details...</td>
+</tr>
+<tr>
+<td>Customer Name: ".$title." ".$firstname." ".$surname."</td>
+<td>Postcode: <strong>{$row[postcode]}</strong></td>
+</tr>
+<tr>
+<td>Check-in: <strong>{$row[checkin]}</strong></td>
+<td>Check-out: <strong>{$row[checkout]}</strong></td>
+</tr>
+<tr>
+<td>Pets allowed: <strong>{$row[pets]}</strong></td>
+</tr>
+</h6>
+</table>
+</td>
+</tr>
+</table>
+
+</div>
 
     echo "Welcome to the Booking Confirmation Page!!!<p>";
-    echo "A confirmation email has been sent!<p>";
     echo "Here are your Booking details...<p>";
     echo "&nbsp;<p>";
     echo "&nbsp;<p>";
@@ -113,38 +144,31 @@ if (!$mail->send()) {
     echo "<a href='SearchBB.php'>Return to the Search Page</a>";
 
 
-                        <div class="table5">
-<a href="Customerinfo.php" id="nodec"><table border="0" cellpadding="5">
-<tr>
-<td><strong><img src="{$row[imageurl]}" id="img3"></strong></td>
-<td>
-<table border="0" cellpadding="5">
-<tr>
-<td colspan="2">B&B Name: <strong>{$row[bbname]}</strong></td>
-</tr>
-<tr>
-<td colspan="2">Address: <strong>{$row[address]}</strong></td>
-</tr>
-<tr>
-<td>Location: <strong>{$row[city]}</strong></td>
-<td>Postcode: <strong>{$row[postcode]}</strong></td>
-</tr>
-<tr>
-<td>Check-in: <strong>{$row[checkin]}</strong></td>
-<td>Check-out: <strong>{$row[checkout]}</strong></td>
-</tr>
-<tr>
-<td>Pets allowed: <strong>{$row[pets]}</strong></td>
-</tr>
-</h6>
-</table>
-</td>
-</tr>
-</table></a>
 
-<button style="float:right;" class="btn" onclick="panToBB($count)">ViewMap</button>
 
-</div>
+<section class="spacer" id="spacer">
+
+</section>
+
+<section class="container" id="foot">
+    <div id="footernav">
+        <nav role="sub">
+            <ul>
+                <li><a href="SearchBB.php">Search</a></li>
+                <li><a href="OwnerSignIn.php">Member Area</a></li>
+                <li><a href="B&Bregistration.html">Register</a></li>
+                <li><a href="help.php#contactsection">Contact</a></li>
+                <li><a href="help.php#helpsection">Help</a></li>
+            </ul>
+        </nav>
+    </div>
+    <p>&nbsp;</p>
+    <div id="copyright">
+    <hr width="100%" size="1">
+    <p>Copyright. Team D Solutions.</p>
+    </div>
+
+</section>
 
 NEWHTML;
     print($newhtml);
