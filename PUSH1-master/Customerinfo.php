@@ -433,7 +433,7 @@ catch(PDOException $e)
 
 
 
-            <tr hidden><td>
+            <tr><td>
                     <label for="bbemail">B&B Email:</label></td>
                 <td>
                         <?php
@@ -445,7 +445,7 @@ catch(PDOException $e)
                                 $newhtml =
                                     <<<NEWHTML
 
-                             <input type="text" name="bbemail" value="{$row[bb_email]}" readonly>{$row[bb_email]}</option>
+                             <input type="text" name="bb_email" value="{$row[bb_email]}" readonly>{$row[bb_email]}</option>
 NEWHTML;
                                 print($newhtml);
                             }
