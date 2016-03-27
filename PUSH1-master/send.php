@@ -88,9 +88,12 @@ if (!$mail->send()) {
         </nav>
     </div>
 </section>
+
+<section class="spacer" id="spacer">
+</section>
+
 <section class="container" id="featured">
     <div class="centre">
-
         <p>Welcome to the Booking Confirmation Page!!!</p>
     </div>
 </section>
@@ -104,7 +107,7 @@ if (!$mail->send()) {
 <td colspan="2">Here are your Booking details...</td>
 </tr>
 <tr>
-<td>Customer Name: ".$title." ".$firstname." ".$surname."</td>
+<td>Booking Reference: $bookingid</td>
 <td>Postcode: <strong>{$row[postcode]}</strong></td>
 </tr>
 <tr>
@@ -112,7 +115,7 @@ if (!$mail->send()) {
 <td>Check-out: <strong>{$row[checkout]}</strong></td>
 </tr>
 <tr>
-<td>Pets allowed: <strong>{$row[pets]}</strong></td>
+<td>Postcode: $postcode</td>
 </tr>
 </h6>
 </table>
