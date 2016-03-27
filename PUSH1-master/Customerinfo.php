@@ -308,6 +308,9 @@ NEWHTML;
                     ?>
                 </select>
             </td></tr>
+        <tr>
+            <td colspan="4"><p align="right" ><input class="btn2" type="submit" value="Submit" class="submit" /></p></td>
+        </tr>
 
 
 </table>
@@ -449,9 +452,18 @@ catch(PDOException $e)
 
                                <tr>
                 <td>
-                    <label for="checkin">checkin test:</label></td>
-                <td><input type="text" id="checkin" class="inputform" name="checkin" value={$row['checkin']} size="20" maxlength="20"></td>
+                    <label for="checkin">Check-in Time:</label></td>
+                <td><input type="text" id="checkin" class="inputform" name="checkin" value="{$row['checkin']}"</td>
             </tr>
+            <td>
+                    <label for="checkout">Check-out Time:</label></td>
+                <td><input type="text" id="checkout" class="inputform" name="checkout" value="{$row['checkout']}"</td>
+            </tr>
+            <td>
+                    <label for="bbname">B&B Name:</label></td>
+                <td><input type="text" id="bbname" class="inputform" name="bbname" value="{$row['bbname']}"></td>
+            </tr>
+
 
 NEWHTML;
                                 print($newhtml);
