@@ -342,13 +342,11 @@ NEWHTML;
 
         <table class="table6">
 
-
-
             <tr><td class="small"><p>* Required Fields</p></td></tr>
 
 
             <tr><td><label for ="room">Please Select a Room *</label></td>
-                <td><select class="inputform" name="room" id="room">
+                <td><select class="inputform" name="roomname" id="roomname">
                         <option value ="">Select Room</option>
 
 
