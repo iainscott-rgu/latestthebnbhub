@@ -99,7 +99,7 @@ if (!$mail->send()) {
 </section>
 
 <div class="table6">
-<table border="1" cellpadding="5">
+<table border="0" cellpadding="5">
 <tr>
 <td colspan="2"><p>A confirmation email has been sent!</p></td>
 </tr>
@@ -135,17 +135,9 @@ if (!$mail->send()) {
 <td>City: $city</td>
 <td>Postcode: $postcode</td>
 </tr>
-<tr>
-<td colspan="2">
-<a href='SearchBB.php'>Return to the Search Page</a>
-</td>
-</tr>
 </table>
 
 </div>
-
-
-
 
 <section class="spacer" id="spacer">
 
