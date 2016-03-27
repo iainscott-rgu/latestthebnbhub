@@ -331,7 +331,7 @@ NEWHTML;
 <section class="container" id="featured">
     <div class="centre">
 
-        <p>You're almost there... please enter your details to complete your booking</p>
+        <p>You're almost there... please select a room and enter your details to complete your booking</p>
     </div>
 </section>
 
@@ -347,7 +347,7 @@ NEWHTML;
             <tr><td class="small"><p>* Required Fields</p></td></tr>
 
 
-            <tr><td><label for ="room">Room *</label></td>
+            <tr><td><label for ="room">Please Select a Room *</label></td>
                 <td><select class="inputform" name="room" id="room">
                         <option value ="">Select Room</option>
 
@@ -435,7 +435,7 @@ catch(PDOException $e)
 
 
 
-            <tr><td>
+            <tr hidden><td>
                     <label for="bbemail">B&B Email:</label></td>
                 <td>
                         <?php
@@ -449,15 +449,17 @@ catch(PDOException $e)
 
                              <input type="text" name="bb_email" value="{$row[bb_email]}" readonly>{$row[bb_email]}</option>
 
-                               <tr>
+                               </td></tr><tr hidden>
                 <td>
                     <label for="checkin">Check-in Time:</label></td>
                 <td><input type="text" id="checkin" class="inputform" name="checkin" value="{$row['checkin']}"</td>
             </tr>
+            <tr hidden>
             <td>
                     <label for="checkout">Check-out Time:</label></td>
                 <td><input type="text" id="checkout" class="inputform" name="checkout" value="{$row['checkout']}"</td>
             </tr>
+            <tr hidden>
             <td>
                     <label for="bbname">B&B Name:</label></td>
                 <td><input type="text" id="bbname" class="inputform" name="bbname" value="{$row['bbname']}"></td>
