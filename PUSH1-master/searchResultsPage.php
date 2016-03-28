@@ -244,11 +244,11 @@ session_start();
  <form action="Customerinfo.php" method="post">
                         <tr hidden><td>
                     <label for="bbname">BBname:</label></td>
-                <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly>{$row[bbname]}</option>
+                <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly></option>
                               </td></tr>
                               <tr hidden><td>
                     <label for="bbid">BBid:</label></td>
-                <td> <input type="text" id="bbid" name="bbid" value="{$row[bbid]}" readonly>{$row[bbid]}</option>
+                <td> <input type="text" id="bbid" name="bbid" value="{$row[bbid]}" readonly></option>
                                </td></tr><input type="submit" value="CLICK">
                               </form>
 
