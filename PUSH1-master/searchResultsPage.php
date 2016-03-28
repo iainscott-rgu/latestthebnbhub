@@ -236,6 +236,11 @@ session_start();
                     <<<NEWHTML
                         <div class="table5">
                         <form action="Customerinfo.php" method="post">
+                        <tr><td>
+                    <label for="bbname">BBname:</label></td>
+                <td> <input type="text" name="bbname" value="{$row[bbname]}" readonly></option>
+
+                               </td></tr></form>
 <a href="Customerinfo.php" id="nodec"><table border="0" cellpadding="5">
 <tr>
 <td><strong><img src="{$row[imageurl]}" id="img3"></strong></td>
