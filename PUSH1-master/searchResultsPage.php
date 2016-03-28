@@ -220,16 +220,16 @@ session_start();
 
         <?php
         $city = $_POST['location'];
-        $region = $_POST['region'];
+
         $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         try{
             $st = $conn-> query("SELECT * FROM [B&B] WHERE [city] = '$city'");
-            $st = $conn-> query("SELECT * FROM [B&B] WHERE [region] = '$region'");
+
 
             $count=0;
             $locations;
-            $regions;
+
 
             foreach($st->fetchAll() as $row) {
                 $newhtml =
@@ -283,7 +283,93 @@ NEWHTML;
 
     </section>
 
-<section class="container" id="foot">
+
+
+
+    <section class="container" id="content2">
+
+
+        <div class="main">
+
+            <div id="mapView">
+
+                <div id="map" style="width:425px;height:425px;background:snow"></div>
+
+            </div>
+
+            <?php
+
+            $region = $_POST['region'];
+            $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
+            $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+            try{
+
+                $st = $conn-> query("SELECT * FROM [B&B] WHERE [region] = '$region'");
+
+                $count=0;
+
+                $regions;
+
+                foreach($st->fetchAll() as $row) {
+                    $newhtml =
+                        <<<NEWHTML
+                            <div class="table5">
+<a href="Customerinfo.php" id="nodec"><table border="0" cellpadding="5">
+<tr>
+<td><strong><img src="{$row[imageurl]}" id="img3"></strong></td>
+<td>
+<table border="0" cellpadding="5">
+<tr>
+<td colspan="2">B&B Name: <strong>{$row[bbname]}</strong></td>
+</tr>
+<tr>
+<td colspan="2">Address: <strong>{$row[address]}</strong></td>
+</tr>
+<tr>
+<td>Location: <strong>{$row[city]}</strong></td>
+<td>Postcode: <strong>{$row[postcode]}</strong></td>
+</tr>
+<tr>
+<td>Check-in: <strong>{$row[checkin]}</strong></td>
+<td>Check-out: <strong>{$row[checkout]}</strong></td>
+</tr>
+<tr>
+<td>Pets allowed: <strong>{$row[pets]}</strong></td>
+</tr>
+</h6>
+</table>
+</td>
+</tr>
+</table></a>
+
+<button style="float:right;" class="btn" onclick="panToBB($count)">ViewMap</button>
+
+</div>
+
+NEWHTML;
+                    print($newhtml);
+                    $count++;
+                }
+            }
+            catch(PDOException $e)
+            {print"$e";}
+            ?>
+
+        </div>
+
+        <section class="spacer" id="spacer">
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="container" id="foot">
 
     <div id="footernav">
         <nav role="sub">
