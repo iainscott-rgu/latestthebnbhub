@@ -249,7 +249,7 @@ session_start();
                               <tr hidden><td>
                     <label for="bbid">BBid:</label></td>
                 <td> <input type="text" id="bbid" name="bbid" value="{$row[bbid]}" readonly></option>
-                               </td></tr><input type="submit" class="btn" value="SELECT">
+                               </td></tr><input type="submit" style="float:right;" class="btn" value="SELECT">
                               </form>
 
 
