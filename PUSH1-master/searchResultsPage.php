@@ -239,9 +239,9 @@ session_start();
 
 <a href="Customerinfo.php" id="nodec">
 
+<table border="0" cellpadding="5">
 
-
- <form action="Customerinfo.php" method="post">
+<form action="Customerinfo.php" method="post">
                        <tr hidden><td>
                     <label for="bbname">BBname:</label></td>
                 <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly></option>
@@ -253,7 +253,6 @@ session_start();
                               </form>
 
 
-<table border="0" cellpadding="5">
 <tr>
 <td><strong><img src="{$row[imageurl]}" id="img3"></strong></td>
 <td>
