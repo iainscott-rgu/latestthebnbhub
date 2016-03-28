@@ -310,7 +310,7 @@ NEWHTML;
                     $newhtml =
                         <<<NEWHTML
                             <div class="table5">
-<a href="Customerinfo.php?{$row[bbname]}" id="nodec"><table border="0" cellpadding="5">
+<a href="Customerinfo.php" id="nodec"><table border="0" cellpadding="5">
 <tr>
 <td><strong><img src="{$row[imageurl]}" id="img3"></strong></td>
 <td>
@@ -332,7 +332,10 @@ NEWHTML;
 <tr>
 <td>Pets allowed: <strong>{$row[pets]}</strong></td>
 </tr>
-</h6>
+  <form action="Customerinfo.php" method="post">
+  <tr>
+  <td colspan="2">B&B Name: <strong>{$row[bbname]}</strong></td>
+  </tr>
 </table>
 </td>
 </tr>
