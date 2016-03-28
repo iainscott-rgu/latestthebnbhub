@@ -216,9 +216,7 @@ session_start();
 
             <div id="map" style="width:425px;height:425px;background:snow"></div>
 
-            <form action="Customerinfo.php" method="post">
-
-        </div>
+            </div>
 
         <?php
         $city = $_POST['location'];
@@ -237,6 +235,7 @@ session_start();
                 $newhtml =
                     <<<NEWHTML
                         <div class="table5">
+                        <form action="Customerinfo.php" method="post">
 <a href="Customerinfo.php" id="nodec"><table border="0" cellpadding="5">
 <tr>
 <td><strong><img src="{$row[imageurl]}" id="img3"></strong></td>
