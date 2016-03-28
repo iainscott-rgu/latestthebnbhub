@@ -239,17 +239,19 @@ session_start();
 
 <a href="Customerinfo.php" id="nodec">
 
+
+
  <form action="Customerinfo.php" method="post">
-                        <tr><td>
+                        <tr hidden><td>
                     <label for="bbname">BBname:</label></td>
                 <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly>{$row[bbname]}</option>
-                              <input type="submit" value="KLICKME"> </td></tr>
+                              <input type="submit" value="CLICK"> </td></tr>
                               <tr><td>
                     <label for="bbid">BBid:</label></td>
-                <td> <input type="text" id="bbid" name="bbid" value="{$row[bbid]}" readonly>{$row[bbid]}</option>
-                              <input type="submit" value="KLICKME"> </td></tr>
-
+                <td hidden> <input type="text" id="bbid" name="bbid" value="{$row[bbid]}" readonly>{$row[bbid]}</option>
+                              <input type="submit" value="CLICK"> </td></tr>
                               </form>
+
 
 <table border="0" cellpadding="5">
 <tr>
