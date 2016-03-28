@@ -257,7 +257,11 @@ session_start();
 <tr>
 <td>Pets allowed: <strong>{$row[pets]}</strong></td>
 </tr>
-</h6>
+<form action="Customerinfo.php" method="post">
+  <tr>
+  <td colspan="2">B&B Name: <strong>{$row[bbname]}</strong></td>
+  </tr>
+  </form>
 </table>
 </td>
 </tr>
