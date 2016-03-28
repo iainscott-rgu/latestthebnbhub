@@ -307,7 +307,7 @@ NEWHTML;
                         <button class="btnclear" type="submit" >Yorkshire and the Humber</button>
                     </form></td>
                 <td><form action="searchResultsPage.php" method="POST">
-                        <input hidden name="region" value='northeast'>
+                        <input hidden name="region" value='north east'>
                         <button class="btnclear" type="submit" >North East</button>
                     </form></td>
                 <td><form action="searchResultsPage.php" method="POST">
