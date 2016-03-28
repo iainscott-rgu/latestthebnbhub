@@ -476,6 +476,35 @@ NEWHTML;
 
                 </td></tr>
             <tr>
+
+
+                <?php
+
+
+                $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
+                $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+                try{
+                    $st = $conn-> query("INSERT INTO [Bookings] ([bbid],[bookingstartdate],[bookingenddate],[cost],[roomid],[bookingtype],
+                                      [cust_title],[cust_firstname],[cust_surname],[cust_telephone],[cust_email],[cust_address_line1], [cust_address_line2],
+                                      [cust_postcode],[cust_city])");
+                                        {
+                        $newhtml =
+                            <<<NEWHTML
+
+            <td colspan="4"><p align="right" ><input class="btn2" type="submit" value="Submit" class="submit" /></p></td>
+
+NEWHTML;
+                        print($newhtml);
+                    }
+                }
+                catch(PDOException $e)
+                {print"$e";}
+
+
+
+                ?>
+
+
                 <td colspan="4"><p align="right" ><input class="btn2" type="submit" value="Submit" class="submit" /></p></td>
             </tr>
         </table></form>
