@@ -242,7 +242,7 @@ session_start();
 
 
  <form action="Customerinfo.php" method="post">
-                        <tr hidden><td>
+                       <tr hidden><td>
                     <label for="bbname">BBname:</label></td>
                 <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly></option>
                               </td></tr>
