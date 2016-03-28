@@ -265,7 +265,7 @@ NEWHTML;
                         <button class="btnclear" type="submit" >London</button>
                     </form></td>
                 <td><form action="searchResultsPage.php" method="POST">
-                        <input hidden name="region" value='west midlands'>
+                        <input hidden name="region" value='westmidlands'>
                         <button class="btnclear" type="submit" >West Midlands</button>
                     </form></td>
                 <td><form action="searchResultsPage.php" method="POST">
@@ -279,11 +279,11 @@ NEWHTML;
             </tr>
             <tr>
                 <td><form action="searchResultsPage.php" method="POST">
-                        <input hidden name="region" value='south east'>
+                        <input hidden name="region" value='southeast'>
                         <button class="btnclear" type="submit" >South East</button>
                     </form></td>
                 <td><form action="searchResultsPage.php" method="POST">
-                        <input hidden name="region" value='east midlands'>
+                        <input hidden name="region" value='eastmidlands'>
                         <button class="btnclear" type="submit" >East Midlands</button>
                     </form></td>
 
@@ -293,21 +293,21 @@ NEWHTML;
                     </form></td>
 
                 <td><form action="searchResultsPage.php" method="POST">
-                        <input hidden name="region" value='northern ireland'>
+                        <input hidden name="region" value='northernireland'>
                         <button class="btnclear" type="submit" >Northern Ireland</button>
                     </form></td>
             </tr>
             <tr>
                 <td><form action="searchResultsPage.php" method="POST">
-                        <input hidden name="region" value='south west'>
+                        <input hidden name="region" value='southwest'>
                         <button class="btnclear" type="submit" >South West</button>
                     </form></td>
                 <td><form action="searchResultsPage.php" method="POST">
-                        <input hidden name="region" value='yorkshire and the humber'>
+                        <input hidden name="region" value='yorkshireandthehumber'>
                         <button class="btnclear" type="submit" >Yorkshire and the Humber</button>
                     </form></td>
                 <td><form action="searchResultsPage.php" method="POST">
-                        <input hidden name="region" value='north east'>
+                        <input hidden name="region" value='northeast'>
                         <button class="btnclear" type="submit" >North East</button>
                     </form></td>
                 <td><form action="searchResultsPage.php" method="POST">

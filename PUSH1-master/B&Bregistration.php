@@ -159,17 +159,17 @@ session_start();
                     <td><select id="region" class="inputform" name="region">
                             <option value="">Select Region</option>
                             <option value="london">London</option>
-                            <option value="south east">South East</option>
-                            <option value="south west">South West</option>
-                            <option value="east midlands">East Midlands</option>
-                            <option value="west midlands">West Midlands</option>
-                            <option value="yorkshire and the humber">Yorkshire and the Humber</option>
+                            <option value="southeast">South East</option>
+                            <option value="southwest">South West</option>
+                            <option value="eastmidlands">East Midlands</option>
+                            <option value="westmidlands">West Midlands</option>
+                            <option value="yorkshireandthehumber">Yorkshire and the Humber</option>
                             <option value="west">West</option>
                             <option value="east">East</option>
-                            <option value="north east">North East</option>
+                            <option value="northeast">North East</option>
                             <option value="wales">Wales</option>
                             <option value="scotland">Scotland</option>
-                            <option value="northern ireland">Northern Ireland</option>
+                            <option value="northernireland">Northern Ireland</option>
                        </select>
                     </td>
                     <td><label for="longitude">Longitude: *</label></td>
