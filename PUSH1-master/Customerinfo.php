@@ -491,8 +491,6 @@ NEWHTML;
                 $bbname = $_POST['bbname'];
                 $bookingstartdate = $_POST['bookingstardate'];
                 $bookingenddate = $_POST['bookingenddate'];
-                $checkin = $_POST['checkin'];
-                $checkout = $_POST['checkout'];
                 $cost = $_POST['cost'];
                 $address = $_POST['address'];
                 $address2 = $_POST['address2'];
@@ -505,7 +503,7 @@ NEWHTML;
                 try {
                     $st = $conn->query("INSERT INTO [Bookings] (['roomname'], ['cust_title'],['cust_firstname'],['cust_surname'],['cust_telephone'],['cust_email'],
                                         ['cust_address_line1'], ['cust_address_line2'],['cust_postcode'],['cust_city'])
-                                        VALUES ($roomname,$title,$firstname,$surname.$telephone, $email,$address,$address2,$postcode,$city)");
+                                        VALUES ($roomname,$title,$firstname,$surname,$telephone,$email,$address,$address2,$postcode,$city)");
                     {
                         $newhtml =
                             <<<NEWHTML
