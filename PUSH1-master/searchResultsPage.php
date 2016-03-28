@@ -239,7 +239,7 @@ session_start();
                         <form action="Customerinfo.php" method="post">
                         <tr><td>
                     <label for="bbname">BBname:</label></td>
-                <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly></option>
+                <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly>{$row[bbname]}</option>
                                </td></tr></form>
 
 <a href="Customerinfo.php" id="nodec"><table border="0" cellpadding="5">
