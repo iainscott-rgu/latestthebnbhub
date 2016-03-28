@@ -336,6 +336,7 @@ NEWHTML;
   <tr>
   <td colspan="2">B&B Name: <strong>{$row[bbname]}</strong></td>
   </tr>
+  </form>
 </table>
 </td>
 </tr>
