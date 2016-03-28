@@ -484,7 +484,7 @@ NEWHTML;
                 $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
                 $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
                 try {
-                    $st = $conn->query("INSERT INTO [Bookings] VALUES ('bbid','bookingstartdate','bookingenddate','cost','roomid','bookingtype',
+                    $st = $conn->query("INSERT INTO [Bookings] VALUES (,'bookingstartdate','bookingenddate','cost','roomid','bookingtype',
                                       'cust_title','cust_firstname','cust_surname','cust_telephone','cust_email','cust_address_line1', 'cust_address_line2',
                                       'cust_postcode','cust_city')");
                     {

@@ -329,6 +329,20 @@ NEWHTML;
                         <<<NEWHTML
                             <div class="table5">
 <a href="Customerinfo.php" id="nodec"><table border="0" cellpadding="5">
+
+
+<form action="Customerinfo.php" method="post">
+                       <tr hidden><td>
+                    <label for="bbname">BBname:</label></td>
+                <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly></option>
+                              </td></tr>
+                              <tr hidden><td>
+                    <label for="bbid">BBid:</label></td>
+                <td> <input type="text" id="bbid" name="bbid" value="{$row[bbid]}" readonly></option>
+                               </td></tr><input type="submit" style="float:right;" class="btn" value="SELECT">
+                              </form>
+
+
 <tr>
 <td><strong><img src="{$row[imageurl]}" id="img3"></strong></td>
 <td>
