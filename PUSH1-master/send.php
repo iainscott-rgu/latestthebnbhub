@@ -206,7 +206,7 @@ try {
         $newhtml =
             <<<NEWHTML
 
-            <td colspan="4"><p align="right" ><input class="btn2" type="submit" value="Submit" class="submit" /></p></td>
+
 
 NEWHTML;
         print($newhtml);
