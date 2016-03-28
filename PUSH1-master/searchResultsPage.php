@@ -243,7 +243,7 @@ session_start();
                         <tr><td>
                     <label for="bbname">BBname:</label></td>
                 <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly>{$row[bbname]}</option>
-                               </td></tr></form>
+                              <input type="submit" value="KLICKME"> </td></tr></form>
 
 <table border="0" cellpadding="5">
 <tr>
