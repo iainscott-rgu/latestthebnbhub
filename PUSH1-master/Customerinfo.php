@@ -478,49 +478,6 @@ NEWHTML;
             <tr>
 
 
-                <?php
-
-                $title = $_POST['title'];
-                $firstname = $_POST['firstname'];
-                $surname = $_POST['surname'];
-                $email = $_POST['email'];
-                $telephone = $_POST['telephone'];
-                $roomname = $_POST['roomname'];
-                $bb_email = $_POST['bb_email'];
-                $bookingid = $_POST['bookingid'];
-                $bbname = $_POST['bbname'];
-                $bookingstartdate = $_POST['bookingstardate'];
-                $bookingenddate = $_POST['bookingenddate'];
-                $cost = $_POST['cost'];
-                $address = $_POST['address'];
-                $address2 = $_POST['address2'];
-                $city = $_POST['city'];
-                $postcode = $_POST['postcode'];
-
-
-                $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
-                $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-                try {
-                    $st = $conn->query("INSERT INTO Bookings ([roomname],[cust_title],[cust_firstname],[cust_surname],[cust_telephone],[cust_email],
-                                        [cust_address_line1], [cust_address_line2],[cust_postcode],[cust_city])
-                                        VALUES ('".$roomname."','".$title."','".$firstname."','".$surname."','".$telephone."','".$email."',
-                                        '".$address."','".$address2."','".$postcode."','".$city."')");
-                    {
-                        $newhtml =
-                            <<<NEWHTML
-
-            <td colspan="4"><p align="right" ><input class="btn2" type="submit" value="Submit" class="submit" /></p></td>
-
-NEWHTML;
-                        print($newhtml);
-                    }
-                }
-                catch(PDOException $e)
-                {print"$e";}
-
-
-
-                ?>
 
 
                 <td colspan="4"><p align="right" ><input class="btn2" type="submit" value="Submit" class="submit" /></p></td>
