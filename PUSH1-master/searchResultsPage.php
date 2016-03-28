@@ -220,13 +220,16 @@ session_start();
 
         <?php
         $city = $_POST['location'];
+        $region = $_POST['region'];
         $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         try{
             $st = $conn-> query("SELECT * FROM [B&B] WHERE [city] = '$city'");
+            $st = $conn-> query("SELECT * FROM [B&B] WHERE [region] = '$region'");
 
             $count=0;
             $locations;
+            $regions;
 
             foreach($st->fetchAll() as $row) {
                 $newhtml =

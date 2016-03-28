@@ -258,7 +258,8 @@ NEWHTML;
         <p>
 
         <table border="0" class="tablejava">
-            <tr>
+
+           <tr>
                 <td><form action="searchResultsPage.php" method="POST">
                         <input hidden name="region" value='london'>
                         <button class="btnclear" type="submit" >London</button>
