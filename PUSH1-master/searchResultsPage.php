@@ -243,7 +243,13 @@ session_start();
                         <tr><td>
                     <label for="bbname">BBname:</label></td>
                 <td> <input type="text" id="bbname" name="bbname" value="{$row[bbname]}" readonly>{$row[bbname]}</option>
-                              <input type="submit" value="KLICKME"> </td></tr></form>
+                              <input type="submit" value="KLICKME"> </td></tr>
+                              <tr><td>
+                    <label for="bbid">BBid:</label></td>
+                <td> <input type="text" id="bbid" name="bbid" value="{$row[bbid]}" readonly>{$row[bbid]}</option>
+                              <input type="submit" value="KLICKME"> </td></tr>
+
+                              </form>
 
 <table border="0" cellpadding="5">
 <tr>
