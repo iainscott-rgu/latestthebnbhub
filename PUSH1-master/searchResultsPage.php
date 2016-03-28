@@ -216,6 +216,8 @@ session_start();
 
             <div id="map" style="width:425px;height:425px;background:snow"></div>
 
+            <form action="Customerinfo.php" method="post">
+
         </div>
 
         <?php
@@ -257,11 +259,7 @@ session_start();
 <tr>
 <td>Pets allowed: <strong>{$row[pets]}</strong></td>
 </tr>
-<form action="Customerinfo.php" method="post">
-  <tr>
-  <td colspan="2">B&B Name: <strong>{$row[bbname]}</strong></td>
-  </tr>
-  </form>
+
 </table>
 </td>
 </tr>
@@ -270,6 +268,7 @@ session_start();
 <button style="float:right;" class="btn" onclick="panToBB($count)">ViewMap</button>
 
 </div>
+</form>
 
 NEWHTML;
                 print($newhtml);
@@ -336,11 +335,7 @@ NEWHTML;
 <tr>
 <td>Pets allowed: <strong>{$row[pets]}</strong></td>
 </tr>
-  <form action="Customerinfo.php" method="post">
-  <tr>
-  <td colspan="2">B&B Name: <strong>{$row[bbname]}</strong></td>
-  </tr>
-  </form>
+
 </table>
 </td>
 </tr>
